@@ -55,7 +55,8 @@ section#projects > div.project-container{
 }
 section#projects > h2{padding: 0px 0px 20px 70px;}section#projects > div.project-container > div{height: auto; max-width: 300px; background: #1C1B2D; padding-bottom: 10px;}
 img.project-gallary{max-width:100%;height:auto}
-button.btn-live-demo,button.btn-source-code{padding: 10px 5px; background: #131313; border-radius: 10px; border: #131313;cursor: pointer; width: 100%; outline:#131313;}
+button.btn-live-demo,button.btn-source-code{box-shadow: 0rem .5rem 1rem #00000050;transition: all .2s;padding: 10px 5px; background: #131313; border-radius: 10px; border: #131313;cursor: pointer; width: 100%; outline:#131313;}
+button.btn-live-demo:hover,button.btn-source-code:hover{transform: translateY(-.4rem); box-shadow: 0rem 1rem 1.2rem #00000050;}
 div.btn-holder{
   display: grid;
   grid-template-columns: repeat(2,40%);
@@ -90,16 +91,15 @@ footer{text-align: center; padding: 20px 0px;background: #0D0D0D;font-size: 0.8e
   section#projects > div.project-container{
     display: grid;
     grid-template-columns: 100%;
-    justify-content: center;
-    align-items: center;
   }
   section#projects > div.project-container > div{
-    height: auto; width: 100%; background: #1C1B2D; padding-bottom: 10px;
+    height: auto; width: 100%; background: #1C1B2D; padding-bottom: 10px; justify-self: center;
   }
-  section#about > div{padding: 80px 10px 40px 10px;}
-  p#article-about-me{padding: 20px 0px 10px 0px;line-height: 20px;font-size: 0.8em;}
-  section#skills{padding: 0px 10px 40px 10px;}section#projects{padding: 10px 20px 40px 20px;}
-  section#contact{padding: 5px 10px 40px 10px;}
+  section#projects > h2{text-align: center;}
+  section#about > div{padding: 80px 15px 40px 15px;}
+  p#article-about-me{padding: 20px 0px 10px 0px;line-height: 20px;font-size: 1em;}
+  section#skills{padding: 0px 15px 40px 15px;}section#projects{padding: 10px 20px 40px 20px;}
+  section#contact{padding: 5px 15px 40px 15px;}
   footer{padding:15px 10px 15px 10px;}
   section#contact > div.contact-address{
     display: grid;
@@ -107,11 +107,14 @@ footer{text-align: center; padding: 20px 0px;background: #0D0D0D;font-size: 0.8e
   }
   section#contact > div.contact-address > div.contact-card-con > div.contact-card-row{
     display: grid;
-    grid-template-columns: 10% 70%;
+    grid-template-columns: 10% 80%;
     justify-content: center;
     column-gap: 20px;
   }
   ul.social-card-holder{
     text-align: center;
+  }
+  div.contact-card-row > p > i{
+    font-size: 1.5em;
   }
 }
