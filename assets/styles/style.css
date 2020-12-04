@@ -10,6 +10,8 @@ header{
   padding: 20px 0px;
   background: #131313;
   transition: all 0.2s;
+  display: grid;
+  grid-template-columns: 30% 60%;
 }
 ul#nav-ul{list-style-type: none; text-align: center;}
 ul#nav-ul > li{
