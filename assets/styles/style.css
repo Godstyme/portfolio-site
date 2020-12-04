@@ -9,13 +9,14 @@ body{background: #131313; color: #fff;}
 header{
   padding: 20px 0px;
   background: #131313;
+  transition: all 0.2s;
 }
 ul#nav-ul{list-style-type: none; text-align: center;}
 ul#nav-ul > li{
   display: inline;
   padding: 5px 35px;
 }
-.fixedNav header{position: fixed; width: 100%; box-shadow: 4px 4px 3px solid red;}
+.fixedNav header{position: fixed; width: 100%;}
 a.nav-link, a > button.btn-live-demo,a >button.btn-source-code,a.contact-link,a.social-handle{text-decoration: none; color: #fff;letter-spacing: 2px;}
 section#con{
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(../imgs/bg4.jpg);
@@ -41,12 +42,11 @@ aside#right-aside{
   padding: 80px 0px 0px 20px;
   justify-self: center;
 }
-aside#left-aside{padding: 80px 0px 0px 20px;}
-aside#left-aside > h1{font-size: 2.5em;}article{padding-top: 10px; letter-spacing: 1px;}
+aside#left-aside{padding: 80px 0px 0px 20px;}article{padding-top: 10px; letter-spacing: 1px;}
 section#about > div{padding: 80px 100px 40px 150px;}p#article-about-me{padding: 20px 0px 10px 0px;line-height: 25px;}
 #skills > div > ul{padding-top: 20px 0px 30px 0px;list-style-position: inside;}#skills{padding: 0px 100px 40px 150px;}
 #skills > div > h2{padding-bottom: 20px;}#skills > div > ul > li{padding-top: 5px;}
-section#projects{padding: 20px 100px 40px 80px;}
+section#projects{padding: 25px 100px 40px 80px;}
 section#projects > div.project-container{
   display: grid;
   grid-template-columns: repeat(3,30%);
@@ -118,95 +118,9 @@ ul.mobile{display: none;}
   }
   div.contact-card-row > p > i{
     font-size: 1.5em;
-  }
-  /* `````````mobile nav menu ```````` */
-  ul.desktop{display: none;}
-  .menu__icon {
-    height: 32px;
-    width: 43px;
-    margin: 3%;
-    position: absolute;
-    top: 10px;
-    right: 3%;
-    display: inline-block;
-    vertical-align: middle;
-    z-index: 20;
-  }
-  .menu__icon span {
-    display: block;
-    background: blue;
-    width: 100%;
-    height: 4px;
-    margin-top: -2px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-  }
-          
-.menu__icon:before,
-.menu__icon:after {
-  content: "";
-  display: block;
-  background: blue;
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  left: 0;
-  transform-origin: center center;
-  transform: rotate(0deg);
-  transition: all 0.3s ease;
+  }     
 }
 
-.menu__icon:before {
-  top: 2px;
-  margin-top: -2px;
-}
-
-.menu__icon:after {
-  bottom: 2px;
-  margin-bottom: -2px;
-}
-           
-.menu_shown .menu__icon span {
-  background: transparent;
-}
-
-.menu_shown .menu__icon:before {
-  top: 50%;
-  transform: rotate(45deg);
-}
-
-.menu_shown .menu__icon:after {
-  bottom: 50%;
-  transform: rotate(-45deg);
-}
-        
-.mobile.menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  text-align: center;
-  padding-top: 112px;
-  background: #7eb4e2;
-  z-index: 10;
-  transition: all .4s ease-in-out;
-  transform: translateX(-100%);
-}
-
-.menu_shown .mobile.menu {
-  transform: translateX(0);
-}
-
-.mobile .nav-link {
-  display: block;
-  line-height: 2;
-  padding: 25px 0;
-}
-    
-     
-}
 @media screen and (max-width: 299px) and (min-width: 200px) {
   section#con > div.container-row{
     display: grid;

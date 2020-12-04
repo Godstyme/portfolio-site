@@ -13,28 +13,28 @@
       <nav>
         <ul id="nav-ul" class="desktop nav-list">
           <li><a href="" class="nav-link">Home</a></li>
-          <li><a href="" class="nav-link">About</a></li>
-          <li><a href="" class="nav-link">Skills</a></li>
-          <li><a href="" class="nav-link">Projects</a></li>
-          <li><a href="" class="nav-link">Contact</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
         <!-- `````````````````mobile hamburger `````````````````````` -->
-        <a href="" class="menu-icon mobile"><span></span></a>
+        <!-- <a href="" class="menu-icon mobile"><span></span></a>
         <ul id="nav-ul" class="mobile">
           <li><a href="" class="nav-link">Home</a></li>
           <li><a href="" class="nav-link">About</a></li>
           <li><a href="" class="nav-link">Skills</a></li>
           <li><a href="" class="nav-link">Projects</a></li>
           <li><a href="" class="nav-link">Contact</a></li>
-        </ul>
+        </ul> -->
       </nav>
     </header>
     <main>
       <section id="con">
         <div class="container-row">
           <aside id="left-aside">
-            <h2>Hi Dear</h2>
-            <h1>Meet Onyibe Godstime</h1>
+            <h2>Hi, I'm Godstime</h2>
+            <h2 style="text-transform: capitalize;padding-top: 5px;"><span class="typed-words"></span></h2>
             <p>
               <article>
                 I am a passionate frontend web developer and a scratch educator proficient in HTML, CSS, Bootstrap and JavaScript.
@@ -172,6 +172,18 @@
       Designed &#38; Built By Godstime Onyibe &hearts; &#124; Copyright &copy; <span id="date"></span> All rights reserved
     </footer>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="assets/scripts/typed.js"></script>
+    <script>
+      var typed = new Typed('.typed-words', {
+      strings: ["A Frontend Web Developer","+ Scratch Educator"],
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+      startDelay: 1000,
+      loop: true,
+      showCursor: true
+      });
+      </script>
     <script src="assets/scripts/main.js"></script>
   </body>
 </html>
