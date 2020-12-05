@@ -2,7 +2,7 @@
 const now = new Date().getFullYear()
 document.querySelector('#date').innerHTML = now
 
-// ````````````fix nav ```````````````````
+// ````````````fixed nav ```````````````````
 const nav = document.querySelector('.header-nav')
 const topOfNav = nav.offsetTop;
 const fixNav = () =>{
@@ -26,9 +26,9 @@ const toggleHamburger = () => {
   navbar.classList.toggle("showNav")
   ham.classList.toggle("fa-times")
 }
-
 ham.addEventListener("click", toggleHamburger)
 
 // toggle when clicking on links
 const navLinks = document.querySelectorAll(".nav-link")
 navLinks.forEach(navLink => navLink.addEventListener("click", toggleHamburger))
+// `````` about hamburger menu end here ```````

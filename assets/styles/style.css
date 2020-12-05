@@ -247,7 +247,7 @@ img.img-fit{object-fit: cover;}
     position: absolute;
     top: 0;
     left: 0;
-    background: black;
+    background: #000;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
