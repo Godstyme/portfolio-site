@@ -239,6 +239,8 @@ footer{text-align: center; padding: 20px 0px;background: #0D0D0D;font-size: 0.8e
     color: #fff;
     background: inherit;
     background-size: 100%;
+    border: none;
+    outline: none;
   }
   /* change ham image to close */
   .showClose {
