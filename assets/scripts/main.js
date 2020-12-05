@@ -24,15 +24,11 @@ const ham = document.querySelector(".ham")
 // toggles hamburger menu in and out when clicking on the hamburger
 const toggleHamburger = () => {
   navbar.classList.toggle("showNav")
-  ham.classList.toggle("showClose")
+  ham.classList.toggle("fa-times")
 }
 
 ham.addEventListener("click", toggleHamburger)
 
 // toggle when clicking on links
-const menuLinks = document.querySelectorAll(".menuLink")
-menuLinks.forEach( 
-  function(menuLink) { 
-    menuLink.addEventListener("click", toggleHamburger) 
-  }
-)
+const navLinks = document.querySelectorAll(".nav-link")
+navLinks.forEach(navLink => navLink.addEventListener("click", toggleHamburger))
