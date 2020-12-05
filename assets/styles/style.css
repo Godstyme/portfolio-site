@@ -94,7 +94,7 @@ p#connect-msg{padding-top: 20px;}div.media-contact-con{padding-top: 40px;}
 ul.social-card-holder{display: grid; grid-template-columns: repeat(5, 20%); list-style-type: none; padding-top: 20px;}
 /* li.social-link{} */
 footer{text-align: center; padding: 20px 0px;background: #0D0D0D;font-size: 0.8em;}
-.ham{display: none;}
+button.ham{display: none;}
 img.img-fit{object-fit: cover;}
 
 /* ``````````````media query````````````````````` */
@@ -227,7 +227,7 @@ img.img-fit{object-fit: cover;}
 @media screen and (min-width: 200px) and (max-width: 1000px) {
   /* ``````  mobile hamburger nav start here `````` */
   header{padding: 40px 0px;}
-  .ham {
+  button.ham {
     display: initial;
     position: absolute;
     z-index: 1000;
