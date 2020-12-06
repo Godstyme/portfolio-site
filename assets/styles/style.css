@@ -6,6 +6,9 @@
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 body{background: #131313; color: #fff;}
+img.img-fit{object-fit: cover;}
+
+/*```````````````  header section ````````````````` */
 header{
   padding: 20px 0px;
   background: #131313;
@@ -19,7 +22,10 @@ ul#nav-ul > li{
   padding: 5px 35px;
 }
 .fixedNav header{position: fixed; width: 100%;}
+button.ham{display: none;}
 a.nav-link, a > button.btn-live-demo,a >button.btn-source-code,a.contact-link,a.social-handle{text-decoration: none; color: #fff;letter-spacing: 2px;}
+
+/*```````````````  body section (banner area) ````````````````` */
 section#con{
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(../imgs/bg4.jpg);
   background-size: cover;
@@ -45,6 +51,9 @@ aside#right-aside{
   justify-self: center;
 }
 aside#left-aside{padding: 80px 0px 0px 20px;}article{padding-top: 10px; letter-spacing: 1px;}
+
+/*```````````````  about section ````````````````` */
+section#about > div{padding: 80px 100px 40px 150px;}p#article-about-me{padding: 20px 0px 10px 0px;line-height: 25px;}
 button.btn-resume{
   margin-top: 5px; 
   padding: 12px 15px; 
@@ -57,9 +66,13 @@ button.btn-resume{
   font-size: 1.1em;
 }
 button.btn-resume:hover {background-color: #4169E1}
-section#about > div{padding: 80px 100px 40px 150px;}p#article-about-me{padding: 20px 0px 10px 0px;line-height: 25px;}
-#skills > div > ul{padding-top: 20px 0px 30px 0px;list-style-position: inside;}#skills{padding: 0px 100px 40px 150px;}
+
+/*```````````````  skill section ````````````````` */
+#skills > div > ul{padding-top: 20px 0px 30px 0px;list-style-position: inside;}
+#skills{padding: 0px 100px 40px 150px;}
 #skills > div > h2{padding-bottom: 20px;}#skills > div > ul > li{padding-top: 5px;}
+
+/*```````````````  project section ````````````````` */
 section#projects{padding: 25px 100px 40px 80px;}
 section#projects > div.project-container{
   display: grid;
@@ -68,7 +81,8 @@ section#projects > div.project-container{
   align-items: center;
   row-gap: 50px;
 }
-section#projects > h2{padding: 0px 0px 20px 70px;}section#projects > div.project-container > div{height: auto; max-width: 300px; background: #1C1B2D; padding-bottom: 10px;}
+section#projects > h2{padding: 0px 0px 20px 70px;}
+section#projects > div.project-container > div{height: auto; max-width: 300px; background: #1C1B2D; padding-bottom: 10px;}
 img.project-gallary{max-width:100%;height:auto}
 button.btn-live-demo,button.btn-source-code{box-shadow: 0rem .5rem 1rem #00000050;transition: all .2s;padding: 10px 5px; background: #131313; border-radius: 10px; border: #131313;cursor: pointer; width: 100%; outline:#131313;}
 button.btn-live-demo:hover,button.btn-source-code:hover{transform: translateY(-.4rem); box-shadow: 0rem 1rem 1.2rem #00000050;}
@@ -79,6 +93,8 @@ div.btn-holder{
   justify-content: center;
   margin-top: 30px;
 }
+
+/*```````````````  contact section ````````````````` */
 section#contact{padding: 5px 0px 40px 140px;}
 section#contact > div.contact-address{
   display: grid;
@@ -92,11 +108,54 @@ section#contact > div.contact-address > div.contact-card-con > div.contact-card-
 }
 p#connect-msg{padding-top: 20px;}div.media-contact-con{padding-top: 40px;}
 ul.social-card-holder{display: grid; grid-template-columns: repeat(5, 20%); list-style-type: none; padding-top: 20px;}
+
+/*```````````````  footer section ````````````````` */
 footer{text-align: center; padding: 20px 0px;background: #0D0D0D;font-size: 0.8em;}
-button.ham{display: none;}img.img-fit{object-fit: cover;}
 
 
-/* ``````````````media query````````````````````` */
+/* ``````````````media query ````````````````````` */
+@media screen and (max-width: 299px) and (min-width: 200px) {
+  section#con > div.container-row{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column: 20px;
+    justify-content: center;
+  }
+  section#projects > div.project-container{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  section#projects > div.project-container > div{
+    height: auto; width: 100%; background: #1C1B2D; padding-bottom: 10px; justify-self: center;
+  }
+  section#projects > h2{text-align: center;padding: 20px 0px;}
+  section#about > div{padding: 80px 15px 40px 15px;}
+  p#article-about-me{line-height: 28px;font-size: 1em;}
+  section#skills{padding: 0px 15px 40px 15px;}section#projects{padding: 10px 20px 40px 20px;}
+  section#contact{padding: 5px 15px 40px 15px;}
+  footer{padding:15px 10px 15px 10px;}
+  section#contact > div.contact-address{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  section#contact > div.contact-address > div.contact-card-con > div.contact-card-row{
+    display: grid;
+    grid-template-columns: 5% 95%;
+    justify-content: center;
+    font-size: 0.9em;
+    padding-top: 20px;
+    column-gap: 15px;
+  }
+  .email{word-break: break-all}
+  ul.social-card-holder{
+    text-align: center;
+  }
+  div.contact-card-row > p > i{
+    font-size: 1.5em;
+  }
+}
+
+
 @media screen and (max-width: 600px) and (min-width: 300px) {
   section#con{
     padding: 10px 0px 100px 0px;
@@ -143,47 +202,6 @@ button.ham{display: none;}img.img-fit{object-fit: cover;}
   div.contact-card-row > p > i{
     font-size: 1.5em;
   }     
-}
-
-@media screen and (max-width: 299px) and (min-width: 200px) {
-  section#con > div.container-row{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-column: 20px;
-    justify-content: center;
-  }
-  section#projects > div.project-container{
-    display: grid;
-    grid-template-columns: 100%;
-  }
-  section#projects > div.project-container > div{
-    height: auto; width: 100%; background: #1C1B2D; padding-bottom: 10px; justify-self: center;
-  }
-  section#projects > h2{text-align: center;padding: 20px 0px;}
-  section#about > div{padding: 80px 15px 40px 15px;}
-  p#article-about-me{line-height: 28px;font-size: 1em;}
-  section#skills{padding: 0px 15px 40px 15px;}section#projects{padding: 10px 20px 40px 20px;}
-  section#contact{padding: 5px 15px 40px 15px;}
-  footer{padding:15px 10px 15px 10px;}
-  section#contact > div.contact-address{
-    display: grid;
-    grid-template-columns: 100%;
-  }
-  section#contact > div.contact-address > div.contact-card-con > div.contact-card-row{
-    display: grid;
-    grid-template-columns: 5% 95%;
-    justify-content: center;
-    font-size: 0.9em;
-    padding-top: 20px;
-    column-gap: 15px;
-  }
-  .email{word-break: break-all}
-  ul.social-card-holder{
-    text-align: center;
-  }
-  div.contact-card-row > p > i{
-    font-size: 1.5em;
-  }
 }
 
 
