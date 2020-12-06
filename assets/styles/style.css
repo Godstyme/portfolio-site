@@ -194,6 +194,8 @@ button.ham{display: none;}img.img-fit{object-fit: cover;}
     grid-column: 20px;
     justify-content: center;
   }
+  aside#left-aside{grid-column: 1;grid-row: 2;padding: 30px 30px 0px 20px;}
+  aside#right-aside{grid-column: 1;grid-row: 1;padding: 80px 0px 0px 0px;}
   section#projects > div.project-container{
     display: grid;
     grid-template-columns: 100%;
