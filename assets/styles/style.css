@@ -121,7 +121,7 @@ button.ham{display: none;}img.img-fit{object-fit: cover;}
   section#projects > div.project-container > div{
     height: auto; width: 100%; background: #1C1B2D; padding-bottom: 10px; justify-self: center;
   }
-  section#projects > h2{text-align: center;}
+  section#projects > h2{text-align: center;padding: 20px 0px;}
   section#about > div{padding: 80px 15px 40px 15px;}
   p#article-about-me{padding: 20px 0px 10px 0px;line-height: 25px;font-size: 1em;}
   section#skills{padding: 0px 15px 40px 15px;}section#projects{padding: 10px 20px 40px 20px;}
@@ -159,7 +159,7 @@ button.ham{display: none;}img.img-fit{object-fit: cover;}
   section#projects > div.project-container > div{
     height: auto; width: 100%; background: #1C1B2D; padding-bottom: 10px; justify-self: center;
   }
-  section#projects > h2{text-align: center;}
+  section#projects > h2{text-align: center;padding: 20px 0px;}
   section#about > div{padding: 80px 15px 40px 15px;}
   p#article-about-me{line-height: 28px;font-size: 1em;}
   section#skills{padding: 0px 15px 40px 15px;}section#projects{padding: 10px 20px 40px 20px;}
@@ -203,7 +203,7 @@ button.ham{display: none;}img.img-fit{object-fit: cover;}
   section#projects > div.project-container > div{
     height: auto; max-width: 100%; background: #1C1B2D; padding-bottom: 10px; justify-self: center;
   }
-  section#projects > h2{text-align: center;}
+  section#projects > h2{text-align: center;padding: 20px 0px;}
   section#about > div{padding: 80px 15px 40px 15px;}
   p#article-about-me{line-height: 30px;font-size: 1em;}
   section#skills{padding: 0px 15px 40px 15px;}section#projects{padding: 10px 20px 40px 20px;}
