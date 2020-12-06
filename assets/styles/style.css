@@ -92,10 +92,9 @@ section#contact > div.contact-address > div.contact-card-con > div.contact-card-
 }
 p#connect-msg{padding-top: 20px;}div.media-contact-con{padding-top: 40px;}
 ul.social-card-holder{display: grid; grid-template-columns: repeat(5, 20%); list-style-type: none; padding-top: 20px;}
-/* li.social-link{} */
 footer{text-align: center; padding: 20px 0px;background: #0D0D0D;font-size: 0.8em;}
-button.ham{display: none;}
-img.img-fit{object-fit: cover;}
+button.ham{display: none;}img.img-fit{object-fit: cover;}
+
 
 /* ``````````````media query````````````````````` */
 @media screen and (max-width: 600px) and (min-width: 300px) {
@@ -106,14 +105,15 @@ img.img-fit{object-fit: cover;}
     display: grid;
     grid-template-columns: 100%;
   }
-  img#profile{ height: 200px;width: 200px;border-radius: 50%;}
+  img#profile{ height: 200px;width: 200px; border-radius: 50%;}
   div#profile-holder{
     border: 20px solid #151515;
     border-radius: 50%;
     height: 240px;width: 240px;
+    justify-self: center;
   }
   aside#left-aside{grid-column: 1;grid-row: 2;padding: 30px 30px 0px 20px;}
-  aside#right-aside{grid-column: 1;grid-row: 1;}
+  aside#right-aside{grid-column: 1;grid-row: 1;padding: 80px 0px 0px 0px;}
   section#projects > div.project-container{
     display: grid;
     grid-template-columns: 100%;
@@ -184,8 +184,9 @@ img.img-fit{object-fit: cover;}
   div.contact-card-row > p > i{
     font-size: 1.5em;
   }
-  
 }
+
+
 @media screen and (max-width: 1000px) and (min-width: 601px) {
   section#con > div.container-row{
     display: grid;
@@ -224,8 +225,8 @@ img.img-fit{object-fit: cover;}
   }
 }
 
-@media screen and (min-width: 200px) and (max-width: 1000px) {
   /* ``````  mobile hamburger nav start here `````` */
+@media screen and (min-width: 200px) and (max-width: 1000px) {
   header{padding: 40px 0px;}
   button.ham {
     display: initial;
@@ -251,7 +252,7 @@ img.img-fit{object-fit: cover;}
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    color: white;
+    color: #fff;
     /* hide the menu above the screen by default */
     transform: translateY(-100%);
     /* transition adds a little animation when sliding in and out the menu */
@@ -272,15 +273,14 @@ img.img-fit{object-fit: cover;}
     align-items: center;
   }
   .navbar ul li a {
-    color: white;
+    color: #fff;
     padding-bottom: 10px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #fff;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
   }
   .navbar ul li a:hover, .navbar ul li a:focus {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #fff;
   }
-  /* ``````````` mobile hamburger nav end here `````````` */
 }
+/* ``````````` mobile hamburger nav end here `````````` */
