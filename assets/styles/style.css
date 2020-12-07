@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body{background: #131313; color: #fff;}
 img.img-fit{object-fit: cover;}
 
